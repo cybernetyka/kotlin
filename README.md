@@ -126,13 +126,25 @@ class Biton:
 
     def addProperty(self, Property):
         self.property.append(Property)
+
+    // sprawdz czy zawiera typ, sumowanie proporcji i relacji
+    // dodaj jesli nie ma typu i relacji
+    // jesli istnieje to zmien wagi proporcji
+    def sum(self, Property):
+        if(Property.relation == self.property.find(Property.type).relation)
+        self.property.append(Property)
         
-    
+        
     def listProperty(self):
         return self.property
         
     def filter(self, key)
       //properties()->filtrowanie(energia)
+      
+
+    // find array of Objects another object with param 
+    def filter(self, key)
+      //properties()->filtrowanie(energia)      
 
 
 
@@ -144,13 +156,19 @@ class Cobit:
     def addBiton(self, Biton):
         self.biton.append(Biton)
         // sprawdz czy zawiera typ, sumowanie proporcji i relacji
+        // dodaj jesli nie ma typu i relacji
+        // jesli istnieje to zmien wagi proporcji
         
     
     def listBiton(self):
         return self.biton
+    
+    
+    def listType(self):
+        return self.biton.filter() // get all types of biton
         
     def values(self, key)
-      //getCecha()->filtrowanie(energia)
+      return self.biton.filter()->filtrowanie(energia) // return grupuj po typach, zmien proporcje, jesli typy i relacje są te same
         
 ```        
   
