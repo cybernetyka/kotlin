@@ -106,10 +106,25 @@ CoBIT
 Intencja -  to możliwość poukładania w odpowiednim porzadku nadchodzacych Bitonów do Cobitu, zmieniając jego wrażliwosć na kolejne wiadomosci (Bitony)
 Jako pętla spreparowanych Bitonów dla Cobitu
 
-for [Biton1, Biton2]:
-  CoBit
+### EXAMPLE
+
+```python
+
+ListBiton = [Biton1([Property1, Property2]), Biton2[Property3], Biton3[Property4]]
+
+myCobit = new CoBit()
+myCobit.addBiton(Biton1)
+print( CoBit.values() )
+
+for Biton as ListBiton:
+  CoBit.addBiton(Biton)
+
+print( CoBit.values() )
+
+```
 
 
+### CORE
 
 ```python
 
