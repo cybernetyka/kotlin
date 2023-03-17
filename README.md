@@ -101,6 +101,21 @@ CoBIT
       Biton2
     )
     
-   
     
+```python
+
+  class Cobit:
+
+    transactions = []             
+
+    def __init__(self, name):
+        self.name = name
+
+    def add(self, trick):
+        self.transactions.append(trick)
+    
+    def list(self, trick):
+        self.transactions.append(trick)
+        
+```        
   
