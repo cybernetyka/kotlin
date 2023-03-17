@@ -129,28 +129,28 @@ print( CoBit.values() )
 ```python
 
 
-// Materia (proporcje relacji cech)
+# Materia (proporcje relacji cech)
 class Property:
 
-    //typ:  wygląd
-    //relacja: czarny/biały
-    //proporcja: 2/3 dotyczy pierwszego elementu relacji, drugi ma 1/3
+    # typ:  wygląd
+    # relacja: czarny/biały
+    # proporcja: 2/3 dotyczy pierwszego elementu relacji, drugi ma 1/3
     
     def __init__(self, type, relation, proportion):
         self.type = type        
         self.relation = relation
         self.proportion = proportion
 
-    // sprawdz czy zawiera typ, sumowanie proporcji i relacji
-    // dodaj jesli nie ma typu i relacji
-    // jesli istnieje to zmien wagi proporcji
+    # sprawdz czy zawiera typ, sumowanie proporcji i relacji
+    # dodaj jesli nie ma typu i relacji
+    # jesli istnieje to zmien wagi proporcji
     def sum(self, Property):
         if(Property.relation == self.relation)
         self.property.append(Property)
         
 
 
-// Biton - Zbiór relacji
+# Biton - Zbiór relacji
 class Biton:
 
     def __init__(self):        
@@ -159,9 +159,9 @@ class Biton:
     def addProperty(self, Property):
         self.property.append(Property)
 
-    // sprawdz czy zawiera typ, sumowanie proporcji i relacji
-    // dodaj jesli nie ma typu i relacji
-    // jesli istnieje to zmien wagi proporcji
+    # sprawdz czy zawiera typ, sumowanie proporcji i relacji
+    # dodaj jesli nie ma typu i relacji
+    # jesli istnieje to zmien wagi proporcji
     def sum(self, Property):
         if(Property.relation == self.property.find(Property.type).relation)        
           self.property.find(Property.type).sum(Property)
@@ -171,16 +171,16 @@ class Biton:
         return self.property
         
     def filter(self, key)
-      //properties()->filtrowanie(energia)
+      #properties()->filtrowanie(energia)
       
 
-    // find array of Objects another object with param 
+    # find array of Objects another object with param 
     def filter(self, key)
-      //properties()->filtrowanie(energia)      
+      #properties()->filtrowanie(energia)      
 
 
 
-// CoBit - świadomy organizm, składa się z materii z Bitonów
+# CoBit - świadomy organizm, składa się z materii z Bitonów
 class Cobit:    
 
     def __init__(self):        
@@ -188,9 +188,9 @@ class Cobit:
 
     def addBiton(self, Biton):
         self.biton.append(Biton)
-        // sprawdz czy zawiera typ, sumowanie proporcji i relacji
-        // dodaj jesli nie ma typu i relacji
-        // jesli istnieje to zmien wagi proporcji
+        # sprawdz czy zawiera typ, sumowanie proporcji i relacji
+        # dodaj jesli nie ma typu i relacji
+        # jesli istnieje to zmien wagi proporcji
         
     
     def listBiton(self):
