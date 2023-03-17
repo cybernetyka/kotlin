@@ -95,8 +95,8 @@ CoBIT
   Interakcja
 
     aplikacjaEnergii(
-      Akcja(czarny, 10J, 10s)
-      Waga(3/4)
+      Biton, // Akcja(czarny, 10J, 10s)
+      Waga(3/4), - intencja podziału energii
       Biton1
       Biton2
     )
@@ -104,18 +104,50 @@ CoBIT
     
 ```python
 
-  class Cobit:
 
-    transactions = []             
+class Property:
+
+    //typ:  wygląd
+    //relacja: czarny/biały
+    //proporcja: 1/2
+    
+    def __init__(self, type, relation, proportion):
+        self.type = type        
+        self.relation = relation
+        self.proportion = proportion
+
+
+
+class Biton:
 
     def __init__(self, name):
         self.name = name
+        self.property = []
 
-    def add(self, trick):
-        self.transactions.append(trick)
+    def add(self, Property):
+        self.property.append(Property)
     
-    def list(self, trick):
-        self.transactions.append(trick)
+    def all(self):
+        return self.property
+        
+    def filter(self, )
+      //properties()->filtrowanie(energia)
+
+
+class Cobit:    
+
+    def __init__(self, name):
+        self.name = name
+        self.transaction = []
+
+    def add(self, Biton):
+        self.transaction.append(Biton)
+    
+    def all(self):
+        return self.transaction
+        
+    def values(self, )
+      //getCecha()->filtrowanie(energia)
         
 ```        
   
