@@ -70,7 +70,7 @@ modele cybernetyczne napisane w kotlin skrypty z przykladami, kotlin, groovy
   
 
 
-### CoBIT - świadomy organizm, składa się z materii
+### CoBIT - świadomy organizm, składa się z materii z Bitonów
   
   //getWaga()
   //getAkumulacja()
