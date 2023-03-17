@@ -102,10 +102,19 @@ CoBIT
     )
     
     
-    
+
+Intencja -  to możliwość poukładania w odpowiednim porzadku nadchodzacych Bitonów do Cobitu, zmieniając jego wrażliwosć na kolejne wiadomosci (Bitony)
+Jako pętla spreparowanych Bitonów dla Cobitu
+
+for [Biton1, Biton2]:
+  CoBit
+
+
+
 ```python
 
 
+// Materia (proporcje relacji cech)
 class Property:
 
     //typ:  wygląd
@@ -117,8 +126,16 @@ class Property:
         self.relation = relation
         self.proportion = proportion
 
+    // sprawdz czy zawiera typ, sumowanie proporcji i relacji
+    // dodaj jesli nie ma typu i relacji
+    // jesli istnieje to zmien wagi proporcji
+    def sum(self, Property):
+        if(Property.relation == self.relation)
+        self.property.append(Property)
+        
 
 
+// Biton - Zbiór relacji
 class Biton:
 
     def __init__(self):        
@@ -131,8 +148,8 @@ class Biton:
     // dodaj jesli nie ma typu i relacji
     // jesli istnieje to zmien wagi proporcji
     def sum(self, Property):
-        if(Property.relation == self.property.find(Property.type).relation)
-        self.property.append(Property)
+        if(Property.relation == self.property.find(Property.type).relation)        
+          self.property.find(Property.type).sum(Property)
         
         
     def listProperty(self):
@@ -148,6 +165,7 @@ class Biton:
 
 
 
+// CoBit - świadomy organizm, składa się z materii z Bitonów
 class Cobit:    
 
     def __init__(self):        
