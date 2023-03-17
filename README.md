@@ -124,10 +124,10 @@ class Biton:
         self.name = name
         self.property = []
 
-    def add(self, Property):
+    def addProperty(self, Property):
         self.property.append(Property)
     
-    def all(self):
+    def listProperty(self):
         return self.property
         
     def filter(self, key)
@@ -140,10 +140,10 @@ class Cobit:
         self.name = name
         self.transaction = []
 
-    def add(self, Biton):
+    def addBiton(self, Biton):
         self.transaction.append(Biton)
     
-    def all(self):
+    def listBiton(self):
         return self.transaction
         
     def values(self, key)
