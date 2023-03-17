@@ -120,12 +120,12 @@ class Property:
 
 class Biton:
 
-    def __init__(self, name):
-        self.name = name
-        self.property = []
+    def __init__(self, Property):        
+        self.property = [ Property ]
 
     def addProperty(self, Property):
         self.property.append(Property)
+        
     
     def listProperty(self):
         return self.property
@@ -136,12 +136,14 @@ class Biton:
 
 class Cobit:    
 
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, Biton):
+        self.Biton = Biton
         self.transaction = []
 
     def addBiton(self, Biton):
         self.transaction.append(Biton)
+        // sprawdz czy zawiera typ, sumowanie proporcji i relacji
+        // przy powolywaniu instancji Biton jest wymagany
     
     def listBiton(self):
         return self.transaction
