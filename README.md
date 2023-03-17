@@ -130,7 +130,7 @@ class Biton:
     def all(self):
         return self.property
         
-    def filter(self, )
+    def filter(self, key)
       //properties()->filtrowanie(energia)
 
 
@@ -146,7 +146,7 @@ class Cobit:
     def all(self):
         return self.transaction
         
-    def values(self, )
+    def values(self, key)
       //getCecha()->filtrowanie(energia)
         
 ```        
