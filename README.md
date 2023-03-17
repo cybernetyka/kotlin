@@ -102,6 +102,7 @@ CoBIT
     )
     
     
+    
 ```python
 
 
@@ -109,7 +110,7 @@ class Property:
 
     //typ:  wygląd
     //relacja: czarny/biały
-    //proporcja: 1/2
+    //proporcja: 2/3 dotyczy pierwszego elementu relacji, drugi ma 1/3
     
     def __init__(self, type, relation, proportion):
         self.type = type        
@@ -120,8 +121,8 @@ class Property:
 
 class Biton:
 
-    def __init__(self, Property):        
-        self.property = [ Property ]
+    def __init__(self):        
+        self.property = []        
 
     def addProperty(self, Property):
         self.property.append(Property)
@@ -134,19 +135,19 @@ class Biton:
       //properties()->filtrowanie(energia)
 
 
+
 class Cobit:    
 
-    def __init__(self, Biton):
-        self.Biton = Biton
-        self.transaction = []
+    def __init__(self):        
+        self.biton = []        
 
     def addBiton(self, Biton):
-        self.transaction.append(Biton)
+        self.biton.append(Biton)
         // sprawdz czy zawiera typ, sumowanie proporcji i relacji
-        // przy powolywaniu instancji Biton jest wymagany
+        
     
     def listBiton(self):
-        return self.transaction
+        return self.biton
         
     def values(self, key)
       //getCecha()->filtrowanie(energia)
