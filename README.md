@@ -119,7 +119,7 @@ print( CoBit.values() )
 for Biton as ListBiton:
   CoBit.addBiton(Biton)
 
-print( CoBit.values() )
+print( CoBit.listProperty() )
 
 ```
 
@@ -144,10 +144,16 @@ class Property:
     # sprawdz czy zawiera typ, sumowanie proporcji i relacji
     # dodaj jesli nie ma typu i relacji
     # jesli istnieje to zmien wagi proporcji
-    def sum(self, Property):
-        if(Property.relation == self.relation)
-        self.property.append(Property)
-        
+    def add(self, Property):
+        if(Property.relation != self.relation) {
+          self.type = Property.type
+          self.relation = Property.relation
+          self.proportion = Property.proportion
+        } else {
+          self.type = Property.type
+          self.relation = Property.relation
+          self.proportion = Property.proportion
+        }
 
 
 # Biton - Zbiór relacji
@@ -162,12 +168,27 @@ class Biton:
     # sprawdz czy zawiera typ, sumowanie proporcji i relacji
     # dodaj jesli nie ma typu i relacji
     # jesli istnieje to zmien wagi proporcji
+    
+    ## Jeśli znajdzie już istniejące, to nie zastępuje, tylko dopisuje i potem liczy wagę dynamicznie
+    
     def sum(self, Property):
-        if(Property.relation == self.property.find(Property.type).relation)        
-          self.property.find(Property.type).sum(Property)
+      list_similiar_types = self.property.find(Property.type)
+   
+      for Property2 as list_similiar_types:
+        if(Property2.relation === self.property.find(Property.relation).relation){ // if TYPE && RELATION
+           self.property.find(Property.type).sum(Property)        
+        else {
+          self.property.find(Property.type).
+        }
         
         
     def listProperty(self):
+        ## calculate the proportions dynamic        
+        return self.property
+        
+    def calcProperty(self):
+        ## calculate the proportions dynamic,
+        # za każdym razem, gdy już istnieje porperty z tym samym typem i relacją, zmieniaj proporcje biorąc pod uwagę ilośc prób, porporcja = nowa proporcja  = jeśli proporcja mniejsza to odejmij, jeśli większa to zwiększ, ale wczesniej podziel przez ilość prób 
         return self.property
         
     def filter(self, key)
@@ -200,8 +221,9 @@ class Cobit:
     def listType(self):
         return self.biton.filter() // get all types of biton
         
-    def values(self, key)
+    def listProperty(self, key)
       return self.biton.filter()->filtrowanie(energia) // return grupuj po typach, zmien proporcje, jesli typy i relacje są te same
         
 ```        
   
+
